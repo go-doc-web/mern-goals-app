@@ -7,6 +7,8 @@ const myRouter = require("./routes/goalsRouters.js");
 
 const app = express();
 
+app.use(cors());
+
 app.use("/api/goals", myRouter);
 
 app.listen(PORT, () => {
